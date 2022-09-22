@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:icon="@drawable/ic_baseline_tv_24"
+            android:title="Channels"/>
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/ic_baseline_person_outline_24"
+            android:title="My Account"/>
+        <item
+            android:id="@+id/item3"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/ic_baseline_help_outline_24"
+            android:title="Help And Feedback"/>
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="Logout"/>
+    </group>
+
+</menu>

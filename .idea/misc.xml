@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_tv_24.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_tv_24_red.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_appClr.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_appclr.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_blue.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_gray.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_red.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_white.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_accounts.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_vedio.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/row_channels.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/swipe_layout.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/menu/activity_menu_drawer.xml" value="0.25677083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
