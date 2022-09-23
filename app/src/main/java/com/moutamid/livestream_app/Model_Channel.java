@@ -1,17 +1,18 @@
 package com.moutamid.livestream_app;
 
 public class Model_Channel {
-    String name , des , cast , time ;
+    String name , des , cast , time , link;
     int image1 ;
 
     public Model_Channel() {
     }
 
-    public Model_Channel(String name, String des, String cast, String time, int image1) {
+    public Model_Channel(String name, String des, String cast, String time, String link, int image1) {
         this.name = name;
         this.des = des;
         this.cast = cast;
         this.time = time;
+        this.link = link;
         this.image1 = image1;
     }
 
@@ -45,6 +46,14 @@ public class Model_Channel {
 
     public void setTime(String time) {
         this.time = time;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 
     public int getImage1() {

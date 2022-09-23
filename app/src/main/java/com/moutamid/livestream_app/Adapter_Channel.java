@@ -41,18 +41,22 @@ public class Adapter_Channel extends RecyclerView.Adapter<Adapter_Channel.Holder
         String des_channel = modelAndroid.getDes();
         String cast_channel = modelAndroid.getCast();
         String time_channel = modelAndroid.getTime();
+        String link_channel = modelAndroid.getLink();
         int image_1 = modelAndroid.getImage1();
 
         holder.name.setText(name_channel);
         holder.des.setText(des_channel);
         holder.cast.setText(cast_channel);
         holder.time.setText(time_channel);
+        holder.link.setText(link_channel);
         holder.image1.setImageResource(image_1);
 
         holder.card_channel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String linkText = holder.link.getText().toString().trim();
                 Intent intent = new Intent(context , Vedio_Activity.class);
+                intent.putExtra("link" , linkText);
                 context.startActivity(intent);
             }
         });
@@ -66,7 +70,7 @@ public class Adapter_Channel extends RecyclerView.Adapter<Adapter_Channel.Holder
     class HolderAndroid extends RecyclerView.ViewHolder {
 
         private ImageView image1 ;
-        private TextView name , des , cast , time;
+        private TextView name , des , cast , time , link;
         private CardView card_channel;
 
         HolderAndroid(@NonNull View itemView) {
@@ -77,6 +81,7 @@ public class Adapter_Channel extends RecyclerView.Adapter<Adapter_Channel.Holder
             des = itemView.findViewById(R.id.description_channel);
             cast = itemView.findViewById(R.id.cast_channel);
             time = itemView.findViewById(R.id.time_channel);
+            link = itemView.findViewById(R.id.link_channel);
             card_channel = itemView.findViewById(R.id.card_channel);
 
         }

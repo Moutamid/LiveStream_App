@@ -7,10 +7,30 @@
     android:background="@color/black"
     tools:context=".Vedio_Activity">
 
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Link"
+        android:textColor="@color/white" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:src="@drawable/loading" />
+
     <VideoView
         android:id="@+id/videoView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gif2"
         android:layout_centerInParent="true" />
 
 </RelativeLayout>

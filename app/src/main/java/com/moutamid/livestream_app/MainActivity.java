@@ -19,22 +19,375 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private String[] channel_name = {"GEO NEW", "HUM NEWS", "ARY NEWS", "PTV SPORTS", "DISNEY", "EXPRESS NEWS",};
+    private String[] channel_name = {
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "GEO NEW",
+            "HUM NEWS",
+            "ARY NEWS",
+            "PTV SPORTS",
+            "DISNEY",
+            "EXPRESS NEWS",
+
+            "DISNEY",
+            "EXPRESS NEWS",
+    };
+
     private String[] channel_des = {
             "Get in touch with all siyuations of All countries with GEO news." ,
             "Get in touch with all siyuations of All countries with HUM news." ,
             "Get in touch with all siyuations of All countries with ARY news." ,
             "Get in touch with all siyuations of All countries with PTV sports." ,
             "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
-            "Get in touch with all siyuations of All countries with Express news." ,};
-    private String[] channel_cast = {"Headlines:", "Kasoti:" , "Startup Pak:" , "Live Match:", "Doraemon:", "Khabarhaar:",};
-    private String[] channel_time = {"03:13", "04:55" , "08:12" , "12:30", "07:51", "11:55",};
-    private int[] images1_channel = {R.drawable.geo, R.drawable.hum, R.drawable.ary,R.drawable.ptv, R.drawable.disney, R.drawable.express, };
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with GEO news." ,
+            "Get in touch with all siyuations of All countries with HUM news." ,
+            "Get in touch with all siyuations of All countries with ARY news." ,
+            "Get in touch with all siyuations of All countries with PTV sports." ,
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+
+            "Get in touch with all siyuations of All countries with Disney Cartoon Channel." ,
+            "Get in touch with all siyuations of All countries with Express news." ,
+    };
+
+    private String[] channel_cast = {
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Headlines:",
+            "Kasoti:" ,
+            "Startup Pak:",
+            "Live Match:",
+            "Doraemon:",
+            "Khabarhaar:",
+
+            "Doraemon:",
+            "Khabarhaar:",
+    };
+
+    private String[] channel_time = {
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "03:13",
+            "04:55",
+            "08:12",
+            "12:30",
+            "07:51",
+            "11:55",
+
+            "07:51",
+            "11:55",
+    };
+
+    private String[] channel_link = {
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+    };
+
+    private int[] images1_channel = {
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+            R.drawable.ary,
+            R.drawable.ptv,
+            R.drawable.disney,
+            R.drawable.express,
+
+            R.drawable.geo,
+            R.drawable.hum,
+    };
 
     private RecyclerView channel_recycler;
     private ArrayList<Model_Channel> modelChannelArrayList;
     private Adapter_Channel adapter_channel;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +418,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     channel_des[i],
                     channel_cast[i],
                     channel_time[i],
+                    channel_link[i],
                     images1_channel[i]
             );
             modelChannelArrayList.add(modelAndroid);
