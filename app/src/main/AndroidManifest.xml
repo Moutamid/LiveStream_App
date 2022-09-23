@@ -23,6 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".Vedio_Activity"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
