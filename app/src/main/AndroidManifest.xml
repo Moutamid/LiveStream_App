@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.moutamid.livestream_app">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LiveStream_App"
         tools:targetApi="31">
+        <activity
+            android:name=".Settings_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_Activity"
+            android:exported="false" />
         <activity
             android:name=".Vedio_Activity"
             android:exported="false" />

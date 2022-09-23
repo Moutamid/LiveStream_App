@@ -8,6 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -77,19 +78,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if(id==R.id.item1){
-            Toast.makeText(this, "Item 1", Toast.LENGTH_SHORT).show();
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"));
+            startActivity(browserIntent);
         }
         else
         if(id==R.id.item2){
-            Toast.makeText(this, "Item 2", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this , Profile_Activity.class);
+            startActivity(intent);
         }
         else
         if(id==R.id.item3){
-            Toast.makeText(this, "Item 3", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this , Settings_Activity.class);
+            startActivity(intent);
         }
         else
         if(id==R.id.item4){
-            Toast.makeText(this, "Item 4", Toast.LENGTH_SHORT).show();
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"));
+            startActivity(browserIntent);
         }
         else
         if(id==R.id.item5){
