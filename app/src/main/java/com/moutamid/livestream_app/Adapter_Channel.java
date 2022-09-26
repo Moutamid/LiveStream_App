@@ -55,8 +55,10 @@ public class Adapter_Channel extends RecyclerView.Adapter<Adapter_Channel.Holder
             @Override
             public void onClick(View view) {
                 String linkText = holder.link.getText().toString().trim();
+                String nameText = holder.name.getText().toString().trim();
                 Intent intent = new Intent(context , Vedio_Activity.class);
                 intent.putExtra("link" , linkText);
+                intent.putExtra("name" , nameText);
                 context.startActivity(intent);
             }
         });
