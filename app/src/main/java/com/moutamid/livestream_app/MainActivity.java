@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     };
 
     private String[] channel_link = {
-            "http://radio-live-mg.rtr-vesti.ru/live/smil:r1.smil/variant.m3u8",
+            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
             "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
             "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
             "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
