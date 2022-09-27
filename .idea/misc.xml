@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_cast_24.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/ic_baseline_radio_24.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/ic_baseline_skip_next_24.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/ic_baseline_skip_previous_24.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/ic_baseline_tv_24.xml" value="0.125" />
@@ -15,6 +18,7 @@
         <entry key="app/src/main/res/drawable/shape_appClr.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/shape_appclr.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/shape_appclr2.xml" value="0.125" />
+        <entry key="app/src/main/res/drawable/shape_black.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/shape_blue.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/shape_cardclr.xml" value="0.125" />
         <entry key="app/src/main/res/drawable/shape_gray.xml" value="0.125" />

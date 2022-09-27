@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     };
 
     private String[] channel_link = {
-            "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
+            "http://radio-live-mg.rtr-vesti.ru/live/smil:r1.smil/variant.m3u8",
             "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
             "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
             "https://media.geeksforgeeks.org/wp-content/uploads/20201217192146/Screenrecorder-2020-12-17-19-17-36-828.mp4?_=1",
@@ -436,11 +436,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(browserIntent);
         }
         else
-        if(id==R.id.item2){
+        /*if(id==R.id.item2){
             Intent intent = new Intent(MainActivity.this , Profile_Activity.class);
             startActivity(intent);
         }
-        else
+        else*/
         if(id==R.id.item3){
             Intent intent = new Intent(MainActivity.this , Settings_Activity.class);
             startActivity(intent);
@@ -452,9 +452,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         else
         if(id==R.id.item5){
-            Intent intent = new Intent(MainActivity.this , Accounts_Activity.class);
-            startActivity(intent);
-            finish();
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://google.com"));
+            startActivity(browserIntent);
+        }
+        else
+        if(id==R.id.item6){
+            startActivity(new Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:to@gmail.com")));
+        }
+        else
+        if(id==R.id.item7){
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=$packageName")));
         }
         return false;
     }
